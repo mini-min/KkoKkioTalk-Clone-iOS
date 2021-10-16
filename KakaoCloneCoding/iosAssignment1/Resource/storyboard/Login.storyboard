@@ -44,6 +44,9 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="PresentToMainView:" destination="0Rv-oE-pYh" eventType="touchUpInside" id="qeP-wJ-973"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-qm-jCM">
                                 <rect key="frame" x="67" y="187" width="241" height="36"/>
@@ -60,6 +63,9 @@
                                 <state key="normal" title="새로운 카카오계정 만들기">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushToSignUpView:" destination="0Rv-oE-pYh" eventType="touchUpInside" id="Igu-s2-lW4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PHq-WF-2DS"/>
@@ -89,6 +95,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DRd-vQ-k6P"/>
+                    <connections>
+                        <outlet property="idTextField" destination="xgP-8q-Mox" id="8xk-8G-BAI"/>
+                        <outlet property="pwTextField" destination="H2G-pz-t1J" id="fGC-L8-niS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWb-tX-jKe" sceneMemberID="firstResponder"/>
             </objects>
