@@ -1,0 +1,9 @@
+disabled_rules:
+- line_length
+- trailing_whitespace
+- nesting
+- function_parameter_count
+excluded:
+- Pods
+- iosAssignment1/Source/AppDelegate.swift
+- iosAssignment1/Source/SceneDelegate.swift

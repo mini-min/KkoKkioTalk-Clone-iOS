@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct DetailListDataModel
-{
+struct DetailListDataModel {
     var detailName: String
 }

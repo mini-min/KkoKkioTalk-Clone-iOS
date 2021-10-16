@@ -9,13 +9,12 @@ import UIKit
 
 class FifthTabCollectionViewCell: UICollectionViewCell {
     
-    static let identifier : String = "FifthTabCollectionViewCell"
+    static let identifier: String = "FifthTabCollectionViewCell"
     
     @IBOutlet weak var talkButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     
-    func setData(name : String)
-    {
+    func setData(name: String) {
         titleLabel.text = name
     }
 }

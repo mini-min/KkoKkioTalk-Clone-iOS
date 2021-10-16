@@ -26,12 +26,10 @@ class FirstTabTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func setData(imageName : String,
-                 name : String,
-                 state : String)
-    {
-        if let image = UIImage(named: imageName)
-        {
+    func setData(imageName: String,
+                 name: String,
+                 state: String) {
+        if let image = UIImage(named: imageName) {
             friendImageView.image = image
         }
         titleLabel.text = name
