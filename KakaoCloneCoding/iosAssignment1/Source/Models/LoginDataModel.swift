@@ -21,8 +21,7 @@ struct LoginDataModel: Codable {
     }
     
     // 서버에서 넘어오는 데이터의 구조가 바뀌었을 때(Key-value가 상이할 때)를 대비!
-    init(from decoder : Decoder) throws
-    {
+    init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""

@@ -21,8 +21,7 @@ struct SignupDataModel: Codable {
     }
     
     // 서버에서 넘어오는 데이터의 구조가 바뀌었을 때(Key-value가 상이할 때)를 대비!
-    init(from decoder : Decoder) throws
-    {
+    init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
@@ -32,7 +31,7 @@ struct SignupDataModel: Codable {
 
 // MARK: - DataClass
 struct SignupUserData: Codable {
-    let nickname : String
+    let nickname: String
 
     // 서버에서 넘어오는 데이터의 구조가 바뀌었을 때(Key의 이름이 변경되었을 때)를 대비! -> CodingKeys 활용
     enum CodingKeys: String, CodingKey {

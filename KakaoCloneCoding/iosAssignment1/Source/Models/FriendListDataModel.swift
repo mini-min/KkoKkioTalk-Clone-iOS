@@ -8,9 +8,8 @@
 import Foundation
 import UIKit
 
-struct FriendListDataModel
-{
-    var imageName : String
-    var name : String
-    var state : String
+struct FriendListDataModel {
+    var imageName: String
+    var name: String
+    var state: String
 }
