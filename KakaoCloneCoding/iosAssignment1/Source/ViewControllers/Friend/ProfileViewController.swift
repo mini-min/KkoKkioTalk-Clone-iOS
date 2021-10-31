@@ -14,5 +14,16 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func closeButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func myChatButtonClicked(_ sender: Any) {
+    }
+    @IBAction func editButtonClicked(_ sender: Any) {
+    }
+    @IBAction func kakaoStoryButtonClicked(_ sender: Any) {
+    }
+    
 }

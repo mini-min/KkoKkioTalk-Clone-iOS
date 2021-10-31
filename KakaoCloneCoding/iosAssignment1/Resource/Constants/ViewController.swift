@@ -13,6 +13,7 @@ extension Const {
         struct Identifier {
             static let loginViewController = "LoginViewController"
             static let signUpViewController = "SignUpViewController"
+            static let tabBarViewController = "TabBarViewController"
             
             static let friendViewController = "FriendViewController"
             static let profileViewController = "ProfileViewController"

@@ -9,7 +9,21 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var pwCheckTextField: UITextField!
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - IBActions
+    @IBAction func makeAccountButtonClicked(_ sender: Any) {
+        let nextVC = UIStoryboard(name: Const.Storyboard.Name.friend, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.friendViewController)
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
 }

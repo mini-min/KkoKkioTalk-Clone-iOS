@@ -34,6 +34,7 @@
 		39021640271ABE92008FD6B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3902163F271ABE92008FD6B2 /* DetailViewController.swift */; };
 		391CB445264023A10092D4D5 /* FifthTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB444264023A10092D4D5 /* FifthTabCollectionViewCell.swift */; };
 		391CB447264026960092D4D5 /* DetailListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB446264026960092D4D5 /* DetailListDataModel.swift */; };
+		39407264272E4ECB00848C56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39407263272E4ECB00848C56 /* TabBarViewController.swift */; };
 		394A6E942648BB5D007B23C7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A6E932648BB5D007B23C7 /* APIConstants.swift */; };
 		394A6E962648BBBD007B23C7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A6E952648BBBD007B23C7 /* NetworkResult.swift */; };
 		397D278C271B00FB0021A17C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D278B271B00FB0021A17C /* LoginViewController.swift */; };
@@ -78,6 +79,7 @@
 		3902163F271ABE92008FD6B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		391CB444264023A10092D4D5 /* FifthTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTabCollectionViewCell.swift; sourceTree = "<group>"; };
 		391CB446264026960092D4D5 /* DetailListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListDataModel.swift; sourceTree = "<group>"; };
+		39407263272E4ECB00848C56 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		394A6E932648BB5D007B23C7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		394A6E952648BBBD007B23C7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		397D278B271B00FB0021A17C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				397D278B271B00FB0021A17C /* LoginViewController.swift */,
 				39021618271ABBC4008FD6B2 /* SignUpViewController.swift */,
+				39407263272E4ECB00848C56 /* TabBarViewController.swift */,
 				39021634271ABE42008FD6B2 /* Friend */,
 				39021633271ABE3A008FD6B2 /* Message */,
 				39021632271ABE33008FD6B2 /* Search */,
@@ -536,6 +539,7 @@
 				3902160A271ABAD4008FD6B2 /* Storyboard.swift in Sources */,
 				394A6E962648BBBD007B23C7 /* NetworkResult.swift in Sources */,
 				391CB447264026960092D4D5 /* DetailListDataModel.swift in Sources */,
+				39407264272E4ECB00848C56 /* TabBarViewController.swift in Sources */,
 				394A6E942648BB5D007B23C7 /* APIConstants.swift in Sources */,
 				39D15A36264B7C5000E0E9DB /* SignUpService.swift in Sources */,
 				391CB445264023A10092D4D5 /* FifthTabCollectionViewCell.swift in Sources */,
