@@ -13,6 +13,7 @@ extension Const {
         struct Name {
             static let login = "Login"
             static let signUp = "SignUp"
+            static let tabBar = "TabBar"
             
             static let friend = "Friend"
             static let profile = "Profile"

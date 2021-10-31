@@ -73,7 +73,9 @@ class FriendViewController: UIViewController {
     }
     
     @IBAction func profileButton(_ sender: Any) {
-  
+        let nextVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController)
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
     }
     
     @IBAction func optionButton(_ sender: Any) {

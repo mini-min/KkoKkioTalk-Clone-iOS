@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ovR-up-J1X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rmo-je-aNx">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡을 시작합니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su2-Ih-l7S">
-                                <rect key="frame" x="20" y="138" width="335" height="24"/>
+                                <rect key="frame" x="20" y="94" width="335" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 또는 전화번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xgP-8q-Mox">
-                                <rect key="frame" x="35" y="293" width="305" height="35"/>
+                                <rect key="frame" x="35" y="249" width="305" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="cF9-6l-abp"/>
                                 </constraints>
@@ -32,21 +32,24 @@
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-pz-t1J">
-                                <rect key="frame" x="35" y="353" width="305" height="35"/>
+                                <rect key="frame" x="35" y="309" width="305" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g00-y2-THQ">
-                                <rect key="frame" x="35" y="463" width="305" height="40"/>
+                                <rect key="frame" x="35" y="419" width="305" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="카카오계정 로그인">
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="0Rv-oE-pYh" eventType="touchUpInside" id="fqB-UQ-RCb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-qm-jCM">
-                                <rect key="frame" x="67" y="187" width="241" height="36"/>
+                                <rect key="frame" x="67" y="143" width="241" height="36"/>
                                 <string key="text">사용하던 카카오계정이 있다면
 이메일 또는 전화번호로 로그인해 주세요.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -54,12 +57,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx9-sT-K0K">
-                                <rect key="frame" x="35" y="528" width="305" height="40"/>
+                                <rect key="frame" x="35" y="484" width="305" height="40"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="새로운 카카오계정 만들기">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonClicked:" destination="0Rv-oE-pYh" eventType="touchUpInside" id="57Y-Wk-MzJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PHq-WF-2DS"/>
@@ -89,28 +95,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DRd-vQ-k6P"/>
+                    <connections>
+                        <outlet property="idTextField" destination="xgP-8q-Mox" id="30c-tB-P1a"/>
+                        <outlet property="pwTextField" destination="H2G-pz-t1J" id="JFT-uh-Jzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWb-tX-jKe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4610.3999999999996" y="83.497536945812811"/>
+            <point key="canvasLocation" x="8380" y="83.497536945812811"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xs7-iU-eC1">
+        <scene sceneID="Tez-nv-vFA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ovR-up-J1X" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rmo-je-aNx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pya-Yc-8KX">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b8a-Hg-rXf">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0Rv-oE-pYh" kind="relationship" relationship="rootViewController" id="gpR-nH-bH2"/>
+                        <segue destination="0Rv-oE-pYh" kind="relationship" relationship="rootViewController" id="who-vT-Rtx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fSf-cW-yzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eh2-WK-Bdp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3668" y="83.497536945812811"/>
+            <point key="canvasLocation" x="7437.6000000000004" y="83.497536945812811"/>
         </scene>
     </scenes>
     <resources>
