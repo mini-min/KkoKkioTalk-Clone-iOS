@@ -96,7 +96,22 @@ class FriendViewController: UIViewController {
 }
 
 extension FriendViewController: UITableViewDelegate {
-    
+    // Swipe Action
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: { (_ action, _ view, _ completionHandler) in
+        })
+        let banAction = UIContextualAction(style: .normal, title: "차단", handler: { (_ action, _ view, _ completionHandler) in
+        })
+        
+        hideAction.backgroundColor = .gray
+        banAction.backgroundColor = .red
+        
+        let swipeActions = UISwipeActionsConfiguration(actions: [banAction, hideAction])
+        swipeActions.performsFirstActionWithFullSwipe = false
+        
+        return swipeActions
+    }
 }
 
 extension FriendViewController: UITableViewDataSource {
