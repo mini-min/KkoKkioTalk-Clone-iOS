@@ -109,6 +109,18 @@ class FriendViewController: UIViewController {
 
 // MARK: - Table View Delegate 
 extension FriendViewController: UITableViewDelegate {
+    // row 클릭 시 화면 전환
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let nextVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController) as? ProfileViewController else { return }
+        
+        nextVC.modalPresentationStyle = .overFullScreen
+        
+        nextVC.image = friendList[indexPath.row].imageName
+        nextVC.profile = friendList[indexPath.row].name
+        
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
     // Swipe Action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -125,6 +137,17 @@ extension FriendViewController: UITableViewDelegate {
         
         return swipeActions
     }
+    
+    // Context Menu Configuration - cell 꾹 눌러서 미리보기
+//    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+//
+//        let chatting = UIAction(title: "채팅하기") { _ in }
+//        let voiceTalk = UIAction(title: "보이스톡") { _ in }
+//        let faceTalk = UIAction(title: "페이스톡") { _ in }
+//        let gift = UIAction(title: "선물하기") { _ in }
+//
+//        return UIContextMenuConfiguration(identifier: <#T##NSCopying?#>, previewProvider: <#T##UIContextMenuContentPreviewProvider?##UIContextMenuContentPreviewProvider?##() -> UIViewController?#>, actionProvider: <#T##UIContextMenuActionProvider?##UIContextMenuActionProvider?##([UIMenuElement]) -> UIMenu?#>)
+//    }
 }
 
 // MARK: - Table View Data Source
