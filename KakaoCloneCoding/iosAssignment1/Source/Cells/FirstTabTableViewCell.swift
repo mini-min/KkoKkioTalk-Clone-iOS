@@ -10,7 +10,7 @@ import UIKit
 class FirstTabTableViewCell: UITableViewCell {
 
     static let identifier: String = "FirstTabTableViewCell"
-    
+        
     @IBOutlet weak var friendImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -25,7 +25,7 @@ class FirstTabTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
     func setData(imageName: String,
                  name: String,
                  state: String) {

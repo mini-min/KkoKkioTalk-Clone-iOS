@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    // MARK: - IBOutlets
+    // MARK: - IBOutlet Properties
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
   
-    // MARK: - IBActions
+    // MARK: - IBAction Properties
     @IBAction func loginButtonClicked(_ sender: Any) {
         let nextVC = UIStoryboard(name: Const.Storyboard.Name.tabBar, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.tabBarViewController)
         nextVC.modalPresentationStyle = .overFullScreen

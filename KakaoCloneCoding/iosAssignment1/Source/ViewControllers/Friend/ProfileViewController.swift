@@ -9,23 +9,49 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    // MARK: - IBOutlet Properties
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    // MARK: - Properties
     var initialTouchPoint = CGPoint(x: 0, y: 0)
+    
+    var image: String = ""
+    var profile: String = ""
 
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getData()
         setPanGesture()
     }
     
+    // MARK: - IBAction Properties
+    // 상단 x버튼 클릭 시
     @IBAction func closeButtonClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // 나와의 채팅 버튼 클릭 시
     @IBAction func myChatButtonClicked(_ sender: Any) {
     }
+    
+    // 프로필 편집 버튼 클릭 시
     @IBAction func editButtonClicked(_ sender: Any) {
     }
+    
+    // 카카오스토리 버튼 클릭 시
     @IBAction func kakaoStoryButtonClicked(_ sender: Any) {
+    }
+    
+    // MARK: - Functions
+    func getData() {
+        self.titleLabel.text = profile
+        
+        if let image = UIImage(named: image) {
+            self.profileImageView.image = image
+        }
     }
     
     func setPanGesture() {

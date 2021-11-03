@@ -9,13 +9,17 @@ import UIKit
 
 class FriendViewController: UIViewController {
 
+    // MARK: - IBOutlet Properties
     @IBOutlet weak var serviceTableView: UITableView!
     @IBOutlet weak var profileHeaderView: UIView!
+    @IBOutlet weak var friendImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
+    // MARK: - Properties
     var friendList: [FriendListDataModel] = []
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +32,7 @@ class FriendViewController: UIViewController {
         serviceTableView.separatorStyle = .none
     }
     
+    // MARK: - Functions
     func setFriendList() {
         friendList.append(contentsOf: [
             FriendListDataModel(imageName: "profileImage1",
@@ -72,9 +77,15 @@ class FriendViewController: UIViewController {
         ])
     }
     
-    @IBAction func profileButton(_ sender: Any) {
-        let nextVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController)
+    // MARK: - IBAction Properties
+    @IBAction func profileButtonClicked(_ sender: Any) {
+        guard let nextVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController) as? ProfileViewController else { return }
+        
         nextVC.modalPresentationStyle = .overFullScreen
+        
+        nextVC.image = ""
+        nextVC.profile = self.nameLabel.text ?? ""
+        
         self.present(nextVC, animated: true, completion: nil)
     }
     
@@ -93,8 +104,10 @@ class FriendViewController: UIViewController {
         
         self.present(optionMenu, animated: true, completion: nil)
     }
+        
 }
 
+// MARK: - Table View Delegate 
 extension FriendViewController: UITableViewDelegate {
     // Swipe Action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -114,6 +127,7 @@ extension FriendViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - Table View Data Source
 extension FriendViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friendList.count

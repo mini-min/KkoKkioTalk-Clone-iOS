@@ -9,7 +9,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    // MARK: - IBOutlets
+    // MARK: - IBOutlet Properties
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var pwCheckTextField: UITextField!
@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    // MARK: - IBActions
+    // MARK: - IBAction Properties
     @IBAction func makeAccountButtonClicked(_ sender: Any) {
         let nextVC = UIStoryboard(name: Const.Storyboard.Name.friend, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.friendViewController)
         nextVC.modalPresentationStyle = .overFullScreen

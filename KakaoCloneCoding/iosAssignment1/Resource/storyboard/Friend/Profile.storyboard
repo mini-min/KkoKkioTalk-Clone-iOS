@@ -154,6 +154,10 @@
                             <constraint firstItem="UxH-lJ-lH0" firstAttribute="bottom" secondItem="JVv-Pz-lvY" secondAttribute="bottom" id="stV-5h-gzE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="wwx-CH-gBh" id="Flo-UT-hGR"/>
+                        <outlet property="titleLabel" destination="JvH-9z-3uk" id="qv5-no-Cvl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK0-xe-N31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
