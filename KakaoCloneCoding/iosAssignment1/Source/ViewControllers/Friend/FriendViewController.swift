@@ -104,7 +104,6 @@ class FriendViewController: UIViewController {
         
         self.present(optionMenu, animated: true, completion: nil)
     }
-        
 }
 
 // MARK: - Table View Delegate 
@@ -117,11 +116,12 @@ extension FriendViewController: UITableViewDelegate {
         
         nextVC.image = friendList[indexPath.row].imageName
         nextVC.profile = friendList[indexPath.row].name
+        nextVC.message = friendList[indexPath.row].state
         
         self.present(nextVC, animated: true, completion: nil)
     }
     
-    // Swipe Action
+    // Swipe Action으로 숨김, 차단 표시
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: { (_ action, _ view, _ completionHandler) in
@@ -139,15 +139,29 @@ extension FriendViewController: UITableViewDelegate {
     }
     
     // Context Menu Configuration - cell 꾹 눌러서 미리보기
-//    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
-//
-//        let chatting = UIAction(title: "채팅하기") { _ in }
-//        let voiceTalk = UIAction(title: "보이스톡") { _ in }
-//        let faceTalk = UIAction(title: "페이스톡") { _ in }
-//        let gift = UIAction(title: "선물하기") { _ in }
-//
-//        return UIContextMenuConfiguration(identifier: <#T##NSCopying?#>, previewProvider: <#T##UIContextMenuContentPreviewProvider?##UIContextMenuContentPreviewProvider?##() -> UIViewController?#>, actionProvider: <#T##UIContextMenuActionProvider?##UIContextMenuActionProvider?##([UIMenuElement]) -> UIMenu?#>)
-//    }
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+
+        return UIContextMenuConfiguration(identifier: nil,
+                                          previewProvider: {
+            let previewVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController) as? ProfileViewController
+            
+            previewVC?.image = self.friendList[indexPath.row].imageName
+            previewVC?.profile = self.friendList[indexPath.row].name
+            previewVC?.message = self.friendList[indexPath.row].state
+            
+            return previewVC
+        }, actionProvider: {_ in
+            let chatting = UIAction(title: "채팅하기") { _ in }
+            let voiceTalk = UIAction(title: "보이스톡") { _ in }
+            let faceTalk = UIAction(title: "페이스톡") { _ in }
+            let gift = UIAction(title: "선물하기") { _ in }
+
+            return UIMenu(title: "", children: [chatting,
+                                               voiceTalk,
+                                               faceTalk,
+                                               gift])
+        })
+    }
 }
 
 // MARK: - Table View Data Source

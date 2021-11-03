@@ -30,133 +30,92 @@
                                     <action selector="closeButtonClicked:" destination="DwN-KS-lOH" eventType="touchUpInside" id="p4C-6W-xVq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="wwx-CH-gBh">
-                                <rect key="frame" x="139" y="504" width="97" height="97"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5wV-V9-vYW">
+                                <rect key="frame" x="37.666666666666657" y="694" width="300" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-jw-1wO">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="H2i-eB-Hsv"/>
+                                            <constraint firstAttribute="height" constant="100" id="qJX-3K-Vzo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" name="white"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="8.5" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="2.2250738585072014e-308" maxY="40"/>
+                                        <state key="normal" title="나와의 채팅" image="profileTalkImg"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiQ-Ux-Eek">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" name="white"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="8.5" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="2.2250738585072014e-308" maxY="40"/>
+                                        <state key="normal" title="프로필 편집" image="profileEditImg">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhI-Fp-I7a">
+                                        <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" name="white"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="8.5" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="2.2250738585072014e-308" maxY="40"/>
+                                        <state key="normal" title="카카오스토리" image="profileStoryImg">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1i-aU-CSR">
+                                <rect key="frame" x="0.0" y="682" width="375" height="1"/>
+                                <color key="backgroundColor" name="gray3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="wwx-CH-gBh" secondAttribute="height" multiplier="1:1" id="F1L-Uz-RNq"/>
-                                    <constraint firstAttribute="width" constant="97" id="VpQ-mQ-MEN"/>
+                                    <constraint firstAttribute="height" constant="1" id="5Qh-dT-YXh"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvH-9z-3uk">
-                                <rect key="frame" x="165.66666666666666" y="609" width="43.666666666666657" height="21.666666666666629"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태메시지는 여기에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oD-H2-8PI">
+                                <rect key="frame" x="135" y="646.33333333333337" width="105" height="15.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-qR-rKG">
+                                <rect key="frame" x="165.66666666666666" y="619.66666666666663" width="43.666666666666657" height="21.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZ5-fZ-Fg1">
-                                <rect key="frame" x="0.0" y="672.66666666666663" width="375" height="1"/>
-                                <color key="backgroundColor" name="gray3"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-2e-Yca">
+                                <rect key="frame" x="139" y="514.66666666666663" width="97" height="97"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Sbe-pU-SFq"/>
+                                    <constraint firstAttribute="width" constant="97" id="MQY-RI-4bl"/>
+                                    <constraint firstAttribute="width" secondItem="Te2-2e-Yca" secondAttribute="height" multiplier="1:1" id="fVB-ff-KH2"/>
                                 </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aGI-dz-bhd">
-                                <rect key="frame" x="43.666666666666657" y="684.66666666666663" width="288" height="72"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUS-Pl-8iS">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="72"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="96" id="gCo-gv-68X"/>
-                                        </constraints>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <connections>
-                                            <action selector="myChatButtonClicked:" destination="DwN-KS-lOH" eventType="touchUpInside" id="w1v-Ek-4Sf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zy-dX-aZX">
-                                        <rect key="frame" x="96" y="0.0" width="96" height="72"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <connections>
-                                            <action selector="editButtonClicked:" destination="DwN-KS-lOH" eventType="touchUpInside" id="dj1-p6-Opb"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1q0-WM-mxL">
-                                        <rect key="frame" x="192" y="0.0" width="96" height="72"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <connections>
-                                            <action selector="kakaoStoryButtonClicked:" destination="DwN-KS-lOH" eventType="touchUpInside" id="JaV-qj-UH0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="Tka-6Y-BwI"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JVv-Pz-lvY">
-                                <rect key="frame" x="63.666666666666657" y="708.66666666666663" width="56" height="41.333333333333371"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="profileTalkImg" translatesAutoresizingMaskIntoConstraints="NO" id="Z7p-g8-z23">
-                                        <rect key="frame" x="0.0" y="0.0" width="56" height="21.333333333333332"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="나와의 채팅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-4q-2Sg">
-                                        <rect key="frame" x="0.0" y="29.333333333333371" width="56" height="12"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="56" id="md1-1F-bZO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" name="gray1"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="VJh-4q-2Sg" firstAttribute="centerX" secondItem="Z7p-g8-z23" secondAttribute="centerX" id="rXc-gJ-tZH"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-lJ-lH0">
-                                <rect key="frame" x="164.33333333333334" y="708.66666666666663" width="46.333333333333343" height="41.333333333333371"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileEditImg" translatesAutoresizingMaskIntoConstraints="NO" id="Hq9-k0-6h9">
-                                        <rect key="frame" x="0.0" y="0.0" width="46.333333333333336" height="21.333333333333332"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 편집" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85P-mi-CD8">
-                                        <rect key="frame" x="0.0" y="29.333333333333371" width="46.333333333333336" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" name="gray1"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="cgN-pc-9uV">
-                                <rect key="frame" x="257.66666666666669" y="708.66666666666663" width="52" height="41.333333333333371"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileStoryImg" translatesAutoresizingMaskIntoConstraints="NO" id="TTg-35-hc1">
-                                        <rect key="frame" x="0.0" y="0.0" width="52" height="23.333333333333332"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오스토리" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-jL-14q">
-                                        <rect key="frame" x="0.0" y="29.333333333333371" width="52" height="12"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" name="gray1"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9F0-3K-1wv"/>
                         <color key="backgroundColor" red="0.52941176469999995" green="0.56862745100000001" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="JVv-Pz-lvY" firstAttribute="centerX" secondItem="UUS-Pl-8iS" secondAttribute="centerX" id="1jE-A9-T9z"/>
-                            <constraint firstItem="YZ5-fZ-Fg1" firstAttribute="top" secondItem="JvH-9z-3uk" secondAttribute="bottom" constant="42" id="2n7-x7-UVR"/>
-                            <constraint firstItem="cgN-pc-9uV" firstAttribute="centerY" secondItem="JVv-Pz-lvY" secondAttribute="centerY" id="8tk-YD-MCZ"/>
-                            <constraint firstItem="YZ5-fZ-Fg1" firstAttribute="leading" secondItem="9F0-3K-1wv" secondAttribute="leading" id="Ca1-FW-v49"/>
-                            <constraint firstItem="JVv-Pz-lvY" firstAttribute="top" secondItem="YZ5-fZ-Fg1" secondAttribute="bottom" constant="35" id="HQs-1X-ulh"/>
-                            <constraint firstItem="9F0-3K-1wv" firstAttribute="trailing" secondItem="YZ5-fZ-Fg1" secondAttribute="trailing" id="JHD-pS-lgY"/>
-                            <constraint firstItem="aGI-dz-bhd" firstAttribute="centerX" secondItem="9F0-3K-1wv" secondAttribute="centerX" id="PD4-wT-SDw"/>
-                            <constraint firstItem="cgN-pc-9uV" firstAttribute="centerX" secondItem="1q0-WM-mxL" secondAttribute="centerX" id="PQp-W1-dZX"/>
-                            <constraint firstItem="UxH-lJ-lH0" firstAttribute="top" secondItem="JVv-Pz-lvY" secondAttribute="top" id="Q5q-q4-Fx0"/>
-                            <constraint firstItem="JvH-9z-3uk" firstAttribute="centerX" secondItem="wwx-CH-gBh" secondAttribute="centerX" id="RTi-r4-X5c"/>
-                            <constraint firstItem="aGI-dz-bhd" firstAttribute="top" secondItem="YZ5-fZ-Fg1" secondAttribute="bottom" constant="11" id="Udx-7R-EfT"/>
-                            <constraint firstItem="UxH-lJ-lH0" firstAttribute="centerX" secondItem="0Zy-dX-aZX" secondAttribute="centerX" id="VDZ-Ud-2q7"/>
-                            <constraint firstItem="wwx-CH-gBh" firstAttribute="centerX" secondItem="9F0-3K-1wv" secondAttribute="centerX" id="Zg5-39-wKU"/>
-                            <constraint firstItem="wwx-CH-gBh" firstAttribute="top" secondItem="9F0-3K-1wv" secondAttribute="top" constant="460" id="ZhQ-cP-yWb"/>
+                            <constraint firstItem="9F0-3K-1wv" firstAttribute="trailing" secondItem="u1i-aU-CSR" secondAttribute="trailing" id="Al5-ZL-t8q"/>
+                            <constraint firstAttribute="bottom" secondItem="5wV-V9-vYW" secondAttribute="bottom" constant="18" id="BOG-nt-eW0"/>
+                            <constraint firstItem="u1i-aU-CSR" firstAttribute="leading" secondItem="9F0-3K-1wv" secondAttribute="leading" id="CfR-Aa-R2T"/>
+                            <constraint firstItem="5wV-V9-vYW" firstAttribute="centerX" secondItem="9F0-3K-1wv" secondAttribute="centerX" id="Rkd-wR-5U1"/>
+                            <constraint firstItem="9oD-H2-8PI" firstAttribute="top" secondItem="hvh-qR-rKG" secondAttribute="bottom" constant="5" id="Zw0-tM-LhQ"/>
+                            <constraint firstItem="Te2-2e-Yca" firstAttribute="centerX" secondItem="9F0-3K-1wv" secondAttribute="centerX" id="b1B-WX-gLu"/>
                             <constraint firstItem="xMU-4V-5LR" firstAttribute="top" secondItem="9F0-3K-1wv" secondAttribute="top" constant="14" id="dkC-s0-bZC"/>
-                            <constraint firstItem="JvH-9z-3uk" firstAttribute="top" secondItem="wwx-CH-gBh" secondAttribute="bottom" constant="8" id="eit-Qb-ehK"/>
+                            <constraint firstItem="u1i-aU-CSR" firstAttribute="top" secondItem="9oD-H2-8PI" secondAttribute="bottom" constant="20" id="jQs-tI-rEb"/>
+                            <constraint firstItem="5wV-V9-vYW" firstAttribute="top" secondItem="u1i-aU-CSR" secondAttribute="bottom" constant="11" id="jcc-8Q-xH1"/>
+                            <constraint firstItem="hvh-qR-rKG" firstAttribute="centerX" secondItem="9oD-H2-8PI" secondAttribute="centerX" id="m9d-Lo-dT5"/>
                             <constraint firstItem="xMU-4V-5LR" firstAttribute="leading" secondItem="9F0-3K-1wv" secondAttribute="leading" constant="18" id="qEt-lz-8uy"/>
-                            <constraint firstItem="UxH-lJ-lH0" firstAttribute="bottom" secondItem="JVv-Pz-lvY" secondAttribute="bottom" id="stV-5h-gzE"/>
+                            <constraint firstItem="hvh-qR-rKG" firstAttribute="top" secondItem="Te2-2e-Yca" secondAttribute="bottom" constant="8" id="xTw-MG-kn5"/>
+                            <constraint firstItem="9oD-H2-8PI" firstAttribute="centerX" secondItem="9F0-3K-1wv" secondAttribute="centerX" id="xeS-JT-rT2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="profileImageView" destination="wwx-CH-gBh" id="Flo-UT-hGR"/>
-                        <outlet property="titleLabel" destination="JvH-9z-3uk" id="qv5-no-Cvl"/>
+                        <outlet property="messageLabel" destination="9oD-H2-8PI" id="53e-yH-qKb"/>
+                        <outlet property="profileImageView" destination="Te2-2e-Yca" id="jLD-vl-M4I"/>
+                        <outlet property="titleLabel" destination="hvh-qR-rKG" id="Pzu-zW-9nQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK0-xe-N31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -170,9 +129,6 @@
         <image name="profileEditImg" width="19.666666030883789" height="21.333333969116211"/>
         <image name="profileStoryImg" width="20.333333969116211" height="23.333333969116211"/>
         <image name="profileTalkImg" width="20.333333969116211" height="19"/>
-        <namedColor name="gray1">
-            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="gray3">
             <color red="0.62352941176470589" green="0.65490196078431373" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

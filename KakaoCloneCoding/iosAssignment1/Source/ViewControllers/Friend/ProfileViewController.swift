@@ -12,12 +12,14 @@ class ProfileViewController: UIViewController {
     // MARK: - IBOutlet Properties
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
     
     // MARK: - Properties
     var initialTouchPoint = CGPoint(x: 0, y: 0)
     
     var image: String = ""
     var profile: String = ""
+    var message: String = ""
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -48,6 +50,7 @@ class ProfileViewController: UIViewController {
     // MARK: - Functions
     func getData() {
         self.titleLabel.text = profile
+        self.messageLabel.text = message
         
         if let image = UIImage(named: image) {
             self.profileImageView.image = image
