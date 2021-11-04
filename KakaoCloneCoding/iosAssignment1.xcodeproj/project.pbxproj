@@ -254,13 +254,13 @@
 			children = (
 				39D5658E26185ACF0036FD57 /* AppDelegate.swift */,
 				39D5659026185ACF0036FD57 /* SceneDelegate.swift */,
+				39D15A37264B81B500E0E9DB /* Service */,
+				39C274DE2646C3680063164E /* Models */,
 				390215FF271ABA44008FD6B2 /* Protocols */,
 				390215FC271ABA23008FD6B2 /* Classes */,
-				39D15A37264B81B500E0E9DB /* Service */,
 				39C274E72646C51C0063164E /* Network */,
 				39C274DD2646C34B0063164E /* Cells */,
 				39C274DA2646C2F80063164E /* ViewControllers */,
-				39C274DE2646C3680063164E /* Models */,
 			);
 			path = Source;
 			sourceTree = "<group>";
