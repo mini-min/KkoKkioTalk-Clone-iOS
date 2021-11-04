@@ -20,6 +20,10 @@ class SignUpViewController: UIViewController {
     }
     
     // MARK: - IBAction Properties
+    @IBAction func tapView(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func makeAccountButtonClicked(_ sender: Any) {
         let nextVC = UIStoryboard(name: Const.Storyboard.Name.friend, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.friendViewController)
         nextVC.modalPresentationStyle = .overFullScreen

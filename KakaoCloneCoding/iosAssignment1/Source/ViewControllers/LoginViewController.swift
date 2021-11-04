@@ -35,6 +35,10 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(pushVC, animated: true)
     }
     
+    @IBAction func tapView(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     func loginAction() {
         LoginService.shared.login(email: self.idTextField.text!, password: self.pwTextField.text!) { result in
             switch result {
