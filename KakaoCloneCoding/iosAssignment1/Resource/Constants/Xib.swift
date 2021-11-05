@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension Const {
+    struct Xib {
+        static let firstTabTableViewCell = "FirstTabTableViewCell"
+        static let fifthTabCollectionViewCell = "FifthTabCollectionViewCell"
+    }
+}

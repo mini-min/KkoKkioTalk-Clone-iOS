@@ -89,6 +89,13 @@ class FriendViewController: UIViewController {
         self.present(nextVC, animated: true, completion: nil)
     }
     
+    @IBAction func addFriendButtonClicked(_ sender: Any) {
+        let presentVC = AddFriendViewController(nibName: Const.ViewController.Identifier.addFriendViewController, bundle: nil)
+        presentVC.modalPresentationStyle = .overCurrentContext
+        presentVC.modalTransitionStyle = .crossDissolve
+        present(presentVC, animated: true, completion: nil)
+    }
+    
     @IBAction func optionButton(_ sender: Any) {
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         

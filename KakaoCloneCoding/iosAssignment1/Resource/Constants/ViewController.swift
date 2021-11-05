@@ -17,6 +17,8 @@ extension Const {
             
             static let friendViewController = "FriendViewController"
             static let profileViewController = "ProfileViewController"
+            static let addFriendViewController = "AddFriendViewController"
+            
             static let messageViewController = "MessageViewController"
             static let searchViewController = "SearchViewController"
             static let shoppingViewController = "ShoppingViewController"

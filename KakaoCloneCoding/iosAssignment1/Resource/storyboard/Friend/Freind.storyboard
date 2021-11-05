@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -176,21 +177,36 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw5-zY-5tD">
+                                <rect key="frame" x="301" y="61" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zw5-zY-5tD" secondAttribute="height" multiplier="1:1" id="TBe-6a-KCu"/>
+                                </constraints>
+                                <color key="tintColor" name="black1"/>
+                                <state key="normal" image="person.badge.plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addFriendButtonClicked:" destination="ksU-yt-dXZ" eventType="touchUpInside" id="mBh-dh-eAu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yze-3a-WS0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lQM-VZ-Ze6" firstAttribute="top" secondItem="yze-3a-WS0" secondAttribute="top" constant="15" id="1sT-ti-kUV"/>
+                            <constraint firstItem="zw5-zY-5tD" firstAttribute="top" secondItem="trW-h5-8Y8" secondAttribute="top" id="4fc-7I-gQX"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="leading" secondItem="yze-3a-WS0" secondAttribute="leading" id="4nR-2Z-xsd"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="trailing" secondItem="yze-3a-WS0" secondAttribute="trailing" id="58h-Nc-roj"/>
                             <constraint firstItem="lQM-VZ-Ze6" firstAttribute="leading" secondItem="yze-3a-WS0" secondAttribute="leading" constant="14" id="5XS-ic-4ZV"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="bottom" secondItem="yze-3a-WS0" secondAttribute="bottom" id="6Z7-Qj-xg0"/>
+                            <constraint firstItem="trW-h5-8Y8" firstAttribute="leading" secondItem="zw5-zY-5tD" secondAttribute="trailing" constant="15" id="BeL-8A-Bu8"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="leading" secondItem="yze-3a-WS0" secondAttribute="leading" id="Ito-YM-tiB"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="leading" secondItem="yze-3a-WS0" secondAttribute="leading" id="MKh-UN-0Lm"/>
+                            <constraint firstItem="zw5-zY-5tD" firstAttribute="bottom" secondItem="trW-h5-8Y8" secondAttribute="bottom" id="Se9-zb-DLZ"/>
                             <constraint firstItem="trW-h5-8Y8" firstAttribute="top" secondItem="yze-3a-WS0" secondAttribute="top" constant="17" id="X8o-FB-wK5"/>
                             <constraint firstItem="yze-3a-WS0" firstAttribute="trailing" secondItem="trW-h5-8Y8" secondAttribute="trailing" constant="15" id="XKR-1a-VSp"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="trailing" secondItem="yze-3a-WS0" secondAttribute="trailing" id="Y71-MV-fYb"/>
                             <constraint firstItem="yze-3a-WS0" firstAttribute="trailing" secondItem="7g4-wL-vvo" secondAttribute="trailing" id="blT-YZ-dhV"/>
+                            <constraint firstItem="zw5-zY-5tD" firstAttribute="width" secondItem="zw5-zY-5tD" secondAttribute="height" multiplier="1:1" id="bzE-Rq-z7B"/>
                             <constraint firstItem="7g4-wL-vvo" firstAttribute="top" secondItem="lQM-VZ-Ze6" secondAttribute="bottom" constant="16" id="gJ6-bJ-OjA"/>
                             <constraint firstItem="trW-h5-8Y8" firstAttribute="centerY" secondItem="lQM-VZ-Ze6" secondAttribute="centerY" id="m6W-B5-6Lf"/>
                             <constraint firstItem="yze-3a-WS0" firstAttribute="trailing" secondItem="lQM-VZ-Ze6" secondAttribute="trailing" constant="320" id="nqJ-q4-fVq"/>
@@ -218,7 +234,11 @@
         <image name="friendTabIcon" width="17.333333969116211" height="19.333333969116211"/>
         <image name="friendTabIconSelected" width="17.333333969116211" height="19.333333969116211"/>
         <image name="friendtabProfileImg" width="59" height="58"/>
+        <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="settingIcon" width="19" height="19"/>
+        <namedColor name="black1">
+            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

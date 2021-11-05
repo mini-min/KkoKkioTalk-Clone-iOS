@@ -42,6 +42,8 @@
 		398BFD93263E67830048D6B3 /* FriendListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BFD92263E67830048D6B3 /* FriendListDataModel.swift */; };
 		39C1ABF726496A36000CA65A /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1ABF626496A36000CA65A /* LoginDataModel.swift */; };
 		39C1ABF926496B2B000CA65A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1ABF826496B2B000CA65A /* LoginService.swift */; };
+		39CE879927350A500058C4FA /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CE879727350A500058C4FA /* AddFriendViewController.swift */; };
+		39CE879A27350A500058C4FA /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CE879827350A500058C4FA /* AddFriendViewController.xib */; };
 		39D15A34264B7AA400E0E9DB /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D15A33264B7AA400E0E9DB /* SignUpDataModel.swift */; };
 		39D15A36264B7C5000E0E9DB /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D15A35264B7C5000E0E9DB /* SignUpService.swift */; };
 		39D5658F26185ACF0036FD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D5658E26185ACF0036FD57 /* AppDelegate.swift */; };
@@ -87,6 +89,8 @@
 		398BFD92263E67830048D6B3 /* FriendListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListDataModel.swift; sourceTree = "<group>"; };
 		39C1ABF626496A36000CA65A /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
 		39C1ABF826496B2B000CA65A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		39CE879727350A500058C4FA /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		39CE879827350A500058C4FA /* AddFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
 		39D15A33264B7AA400E0E9DB /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
 		39D15A35264B7C5000E0E9DB /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		39D5658B26185ACF0036FD57 /* 꼬끼오톡.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "꼬끼오톡.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +238,7 @@
 			children = (
 				39021635271ABE6A008FD6B2 /* FriendViewController.swift */,
 				39021637271ABE77008FD6B2 /* ProfileViewController.swift */,
+				39CE879727350A500058C4FA /* AddFriendViewController.swift */,
 			);
 			path = Friend;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			children = (
 				39D5658E26185ACF0036FD57 /* AppDelegate.swift */,
 				39D5659026185ACF0036FD57 /* SceneDelegate.swift */,
+				39CE879B27350AAC0058C4FA /* Views */,
 				39D15A37264B81B500E0E9DB /* Service */,
 				39C274DE2646C3680063164E /* Models */,
 				390215FF271ABA44008FD6B2 /* Protocols */,
@@ -323,6 +329,22 @@
 				39D5659926185AD20036FD57 /* LaunchScreen.storyboard */,
 			);
 			path = storyboard;
+			sourceTree = "<group>";
+		};
+		39CE879B27350AAC0058C4FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39CE879C27350AB80058C4FA /* Friend */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39CE879C27350AB80058C4FA /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				39CE879827350A500058C4FA /* AddFriendViewController.xib */,
+			);
+			path = Friend;
 			sourceTree = "<group>";
 		};
 		39D15A37264B81B500E0E9DB /* Service */ = {
@@ -445,6 +467,7 @@
 				3902162B271ABD49008FD6B2 /* Shopping.storyboard in Resources */,
 				3902162D271ABD4F008FD6B2 /* Detail.storyboard in Resources */,
 				39021625271ABD34008FD6B2 /* Freind.storyboard in Resources */,
+				39CE879A27350A500058C4FA /* AddFriendViewController.xib in Resources */,
 				3902162F271ABDA5008FD6B2 /* Profile.storyboard in Resources */,
 				39021629271ABD42008FD6B2 /* Search.storyboard in Resources */,
 				3902161B271ABBCC008FD6B2 /* SignUp.storyboard in Resources */,
@@ -533,6 +556,7 @@
 				398BFD93263E67830048D6B3 /* FriendListDataModel.swift in Sources */,
 				39D5659126185ACF0036FD57 /* SceneDelegate.swift in Sources */,
 				39021606271ABAAB008FD6B2 /* Const.swift in Sources */,
+				39CE879927350A500058C4FA /* AddFriendViewController.swift in Sources */,
 				39C1ABF926496B2B000CA65A /* LoginService.swift in Sources */,
 				390215FE271ABA2F008FD6B2 /* TempClass.swift in Sources */,
 				39021638271ABE77008FD6B2 /* ProfileViewController.swift in Sources */,
