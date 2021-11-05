@@ -88,11 +88,11 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
     
     // minimumLineSpacing 메서드: Cell 들의 위, 아래 간격 지정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 19       // 상하 19포인트 : lineSpacing -> return 19
+        return 3      // 상하 19포인트 : lineSpacing -> return 19
     }
     
     // minimumInteritemSpacing 메서드: Cell 들의 좌,우 간격 지정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 3        // 좌우 3포인트 : InterItemSpacing -> return 3
+        return 19       // 좌우 3포인트 : InterItemSpacing -> return 3
     }
 }

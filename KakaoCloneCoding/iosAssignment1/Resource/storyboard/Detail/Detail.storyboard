@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -123,28 +124,28 @@
                                 <rect key="frame" x="19" y="179" width="376" height="634"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x94-QR-Ad6">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="70" height="70"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FifthTabCollectionViewCell" id="lQo-LD-GAz" customClass="FifthTabCollectionViewCell" customModule="꼬끼오톡" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iL7-y1-D2K">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RD5-cZ-SQd">
-                                                    <rect key="frame" x="25" y="25" width="78" height="20"/>
+                                                    <rect key="frame" x="25" y="19" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="jK6-q0-O2f"/>
                                                     </constraints>
                                                     <state key="normal" image="message" catalog="system"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3R-Lq-eot">
-                                                    <rect key="frame" x="0.0" y="53" width="128" height="66"/>
+                                                    <rect key="frame" x="0.0" y="47" width="70" height="14"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -156,9 +157,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" name="black1"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="RD5-cZ-SQd" secondAttribute="trailing" constant="25" id="6ZD-JF-I4Q"/>
-                                                <constraint firstItem="RD5-cZ-SQd" firstAttribute="top" secondItem="iL7-y1-D2K" secondAttribute="top" constant="25" id="A5Y-rv-Y72"/>
+                                                <constraint firstItem="RD5-cZ-SQd" firstAttribute="top" secondItem="iL7-y1-D2K" secondAttribute="top" constant="19" id="A5Y-rv-Y72"/>
                                                 <constraint firstItem="z3R-Lq-eot" firstAttribute="top" secondItem="RD5-cZ-SQd" secondAttribute="bottom" constant="8" id="Poi-61-eNU"/>
                                                 <constraint firstAttribute="bottom" secondItem="z3R-Lq-eot" secondAttribute="bottom" constant="9" id="Qys-qr-gkC"/>
                                                 <constraint firstAttribute="trailing" secondItem="z3R-Lq-eot" secondAttribute="trailing" id="SP5-FX-EXI"/>
@@ -166,6 +168,7 @@
                                                 <constraint firstItem="z3R-Lq-eot" firstAttribute="leading" secondItem="iL7-y1-D2K" secondAttribute="leading" id="yme-9G-zdl"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="70" height="70"/>
                                         <connections>
                                             <outlet property="talkButton" destination="RD5-cZ-SQd" id="KfS-ao-FKI"/>
                                             <outlet property="titleLabel" destination="z3R-Lq-eot" id="EAO-WL-SlB"/>
@@ -200,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOc-uE-mgC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="169"/>
+            <point key="canvasLocation" x="150.72463768115944" y="168.75"/>
         </scene>
     </scenes>
     <resources>
@@ -209,6 +212,9 @@
         <image name="friendtabProfileImg" width="59" height="58"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="settingIcon" width="19" height="19"/>
+        <namedColor name="black1">
+            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
