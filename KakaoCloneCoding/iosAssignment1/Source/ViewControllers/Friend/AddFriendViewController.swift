@@ -38,7 +38,7 @@ class AddFriendViewController: UIViewController {
     
     // MARK: - Functions
     func cellExpand() {
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0.05) {
             self.menuHeightConstaint.constant = 73
             self.view.layoutIfNeeded()
             
@@ -46,7 +46,11 @@ class AddFriendViewController: UIViewController {
             self.addPhoneButton.tintColor = .black
             self.addIDButton.tintColor = .black
             self.recommendButton.tintColor = .black
+            
+            self.QRCodeButton.titleLabel?.textColor = .black
+            self.addPhoneButton.titleLabel?.textColor = .black
+            self.addIDButton.titleLabel?.textColor = .black
+            self.recommendButton.titleLabel?.textColor = .black
         }
     }
-    
 }

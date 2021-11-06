@@ -58,20 +58,20 @@
                                                 <action selector="profileButtonClicked:" destination="ksU-yt-dXZ" eventType="touchUpInside" id="BZG-rd-tlV"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김솝트" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkR-YM-kgT">
-                                            <rect key="frame" x="83" y="15" width="42" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이민재" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkR-YM-kgT">
+                                            <rect key="frame" x="83" y="15" width="100" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="cHD-cT-yZV"/>
-                                                <constraint firstAttribute="width" constant="42" id="kug-Iv-1ux"/>
+                                                <constraint firstAttribute="width" constant="100" id="kug-Iv-1ux"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태메시지는 여기에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FES-ux-j0F">
-                                            <rect key="frame" x="84" y="40" width="89" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금은 열심히 아요 공부 ~ing🍎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FES-ux-j0F">
+                                            <rect key="frame" x="84" y="40" width="200" height="16"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="89" id="BJZ-J9-5a1"/>
+                                                <constraint firstAttribute="width" constant="200" id="BJZ-J9-5a1"/>
                                                 <constraint firstAttribute="height" constant="16" id="zSf-Wv-Fgn"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="11"/>
@@ -128,7 +128,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZj-os-Rtq">
-                                                    <rect key="frame" x="71" y="10" width="42" height="16"/>
+                                                    <rect key="frame" x="71" y="10" width="104" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="vvJ-sh-WxV"/>
                                                     </constraints>
@@ -142,7 +142,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-ib-162">
-                                                    <rect key="frame" x="71" y="27" width="52" height="12"/>
+                                                    <rect key="frame" x="71" y="27" width="188" height="12"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
@@ -154,10 +154,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="TZj-os-Rtq" secondAttribute="trailing" constant="262" id="2TS-74-DNi"/>
+                                                <constraint firstAttribute="trailing" secondItem="TZj-os-Rtq" secondAttribute="trailing" constant="200" id="2TS-74-DNi"/>
                                                 <constraint firstAttribute="bottom" secondItem="X6T-ib-162" secondAttribute="bottom" constant="11" id="3uf-q9-gMU"/>
                                                 <constraint firstItem="TZj-os-Rtq" firstAttribute="leading" secondItem="fUM-jj-B4Y" secondAttribute="trailing" constant="11" id="4a4-2j-Ncq"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="X6T-ib-162" secondAttribute="trailing" constant="236" id="5mU-3J-ZXW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="X6T-ib-162" secondAttribute="trailing" constant="100" id="5mU-3J-ZXW"/>
                                                 <constraint firstItem="R0u-4C-Y7q" firstAttribute="bottom" secondItem="fUM-jj-B4Y" secondAttribute="bottom" id="9qJ-Vn-dHL"/>
                                                 <constraint firstItem="fUM-jj-B4Y" firstAttribute="top" secondItem="nAZ-kN-xJz" secondAttribute="top" constant="4" id="Mw3-tx-DfH"/>
                                                 <constraint firstItem="X6T-ib-162" firstAttribute="top" secondItem="nAZ-kN-xJz" secondAttribute="top" constant="27" id="QOM-eH-6aH"/>

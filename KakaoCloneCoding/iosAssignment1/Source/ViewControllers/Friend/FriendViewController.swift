@@ -36,44 +36,44 @@ class FriendViewController: UIViewController {
     func setFriendList() {
         friendList.append(contentsOf: [
             FriendListDataModel(imageName: "profileImage1",
-                                name: "안솝트",
-                                state: "배고파요"),
+                                name: "김냐옹",
+                                state: "코로나 언제끝나죠..?"),
             
             FriendListDataModel(imageName: "profileImage2",
-                                name: "최솝트",
-                                state: "피곤해요"),
+                                name: "최냐옹",
+                                state: "김냐옹 갖고싶다💰"),
             
             FriendListDataModel(imageName: "profileImage3",
-                                name: "정솝트",
-                                state: "시험언제끝나죠?"),
+                                name: "정펭귄",
+                                state: "나는 뒤뚱뒤뚱 펭귄이라네🐧"),
             
             FriendListDataModel(imageName: "profileImage4",
-                                name: "이솝트",
+                                name: "이냐옹",
                                 state: "ㅠㅠㅠㅠ"),
             
             FriendListDataModel(imageName: "profileImage5",
-                                name: "유솝트",
-                                state: "나는 상태메세지!"),
+                                name: "유멍멍",
+                                state: "나좀 이쁘다❤️"),
             
             FriendListDataModel(imageName: "profileImage6",
-                                name: "박솝트",
-                                state: "원하는대로 바꿔보세요 ^_^"),
+                                name: "박멍멍",
+                                state: "주인놈 나를 괴롭히지마라 멍🐶"),
             
             FriendListDataModel(imageName: "profileImage7",
-                                name: "최솝트",
-                                state: "넘 덥다.."),
-            
-            FriendListDataModel(imageName: "profileImage8",
-                                name: "원솝트",
+                                name: "최토끼",
                                 state: "배고파요"),
             
+            FriendListDataModel(imageName: "profileImage8",
+                                name: "원멍",
+                                state: "내 취미는 멍때리기"),
+            
             FriendListDataModel(imageName: "profileImage9",
-                                name: "투솝트",
-                                state: "내꿈은 대나무부자"),
+                                name: "투판다",
+                                state: "내꿈은 대나무부자🎋"),
             
             FriendListDataModel(imageName: "profileImage10",
-                                name: "권솝트",
-                                state: "걱정말라구!")
+                                name: "권너굴",
+                                state: "라면은 너구리지")
         ])
     }
     
@@ -89,6 +89,7 @@ class FriendViewController: UIViewController {
         
         nextVC.image = ""
         nextVC.profile = self.nameLabel.text ?? ""
+        nextVC.message = self.messageLabel.text ?? ""
         
         self.present(nextVC, animated: true, completion: nil)
     }
@@ -116,7 +117,10 @@ class FriendViewController: UIViewController {
         optionMenu.addAction(settingtAction)
         optionMenu.addAction(cancelAction)
         
-        self.present(optionMenu, animated: true, completion: nil)
+        self.present(optionMenu, animated: true) {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+            optionMenu.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
     }
 }
 
