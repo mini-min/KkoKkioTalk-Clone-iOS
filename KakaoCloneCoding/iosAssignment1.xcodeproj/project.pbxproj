@@ -42,6 +42,7 @@
 		398BFD93263E67830048D6B3 /* FriendListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398BFD92263E67830048D6B3 /* FriendListDataModel.swift */; };
 		39C1ABF726496A36000CA65A /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1ABF626496A36000CA65A /* LoginDataModel.swift */; };
 		39C1ABF926496B2B000CA65A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1ABF826496B2B000CA65A /* LoginService.swift */; };
+		39CB4BB627364509000225C4 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB4BB527364509000225C4 /* UIColor+Extension.swift */; };
 		39CE879927350A500058C4FA /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CE879727350A500058C4FA /* AddFriendViewController.swift */; };
 		39CE879A27350A500058C4FA /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CE879827350A500058C4FA /* AddFriendViewController.xib */; };
 		39D15A34264B7AA400E0E9DB /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D15A33264B7AA400E0E9DB /* SignUpDataModel.swift */; };
@@ -89,6 +90,7 @@
 		398BFD92263E67830048D6B3 /* FriendListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListDataModel.swift; sourceTree = "<group>"; };
 		39C1ABF626496A36000CA65A /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
 		39C1ABF826496B2B000CA65A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		39CB4BB527364509000225C4 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		39CE879727350A500058C4FA /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		39CE879827350A500058C4FA /* AddFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
 		39D15A33264B7AA400E0E9DB /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				39021612271ABB22008FD6B2 /* UIView+Extension.swift */,
+				39CB4BB527364509000225C4 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				3902163A271ABE7D008FD6B2 /* MessageViewController.swift in Sources */,
 				39C1ABF726496A36000CA65A /* LoginDataModel.swift in Sources */,
 				3902163C271ABE83008FD6B2 /* SearchViewController.swift in Sources */,
+				39CB4BB627364509000225C4 /* UIColor+Extension.swift in Sources */,
 				39021619271ABBC4008FD6B2 /* SignUpViewController.swift in Sources */,
 				398BFD93263E67830048D6B3 /* FriendListDataModel.swift in Sources */,
 				39D5659126185ACF0036FD57 /* SceneDelegate.swift in Sources */,

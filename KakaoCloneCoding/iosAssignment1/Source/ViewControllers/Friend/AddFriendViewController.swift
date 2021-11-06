@@ -42,10 +42,10 @@ class AddFriendViewController: UIViewController {
             self.menuHeightConstaint.constant = 73
             self.view.layoutIfNeeded()
             
-            self.QRCodeButton.tintColor = UIColor
-            self.addPhoneButton
-            self.addIDButton
-            self.recommendButton
+            self.QRCodeButton.tintColor = .black
+            self.addPhoneButton.tintColor = .black
+            self.addIDButton.tintColor = .black
+            self.recommendButton.tintColor = .black
         }
     }
     
