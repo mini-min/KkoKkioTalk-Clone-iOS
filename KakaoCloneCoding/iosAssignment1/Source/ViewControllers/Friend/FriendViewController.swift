@@ -77,6 +77,10 @@ class FriendViewController: UIViewController {
         ])
     }
     
+    @objc func dismissAlertController() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK: - IBAction Properties
     @IBAction func profileButtonClicked(_ sender: Any) {
         guard let nextVC = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.profileViewController) as? ProfileViewController else { return }
@@ -93,7 +97,10 @@ class FriendViewController: UIViewController {
         let presentVC = AddFriendViewController(nibName: Const.ViewController.Identifier.addFriendViewController, bundle: nil)
         presentVC.modalPresentationStyle = .overCurrentContext
         presentVC.modalTransitionStyle = .crossDissolve
-        present(presentVC, animated: true, completion: nil)
+        present(presentVC, animated: true) {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+            presentVC.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
     }
     
     @IBAction func optionButton(_ sender: Any) {

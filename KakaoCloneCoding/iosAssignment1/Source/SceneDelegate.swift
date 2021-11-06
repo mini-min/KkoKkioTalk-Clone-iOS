@@ -19,9 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-            window?.windowScene = windowScene
+        window?.windowScene = windowScene
         window?.rootViewController = UIStoryboard(name: Const.Storyboard.Name.login, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.Identifier.loginViewController)
-        // window?.rootViewController = TabBarViewController()
+//        window?.rootViewController = TabBarViewController()
         window?.makeKeyAndVisible()
     }
 

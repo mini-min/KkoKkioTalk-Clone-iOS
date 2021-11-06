@@ -6,24 +6,47 @@
 //
 
 import UIKit
+import Alamofire
 
 class AddFriendViewController: UIViewController {
 
+    // MARK: - IBOutlet Properties
+    @IBOutlet weak var menuView: UIView!
+    @IBOutlet weak var menuHeightConstaint: NSLayoutConstraint!
+    
+    @IBOutlet weak var QRCodeButton: UIButton!
+    @IBOutlet weak var addPhoneButton: UIButton!
+    @IBOutlet weak var addIDButton: UIButton!
+    @IBOutlet weak var recommendButton: UIButton!
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        cellExpand()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - IBAction Properties
+    @IBAction func closeButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    // MARK: - Functions
+    func cellExpand() {
+        UIView.animate(withDuration: 0.1) {
+            self.menuHeightConstaint.constant = 73
+            self.view.layoutIfNeeded()
+            
+            self.QRCodeButton.tintColor = UIColor
+            self.addPhoneButton
+            self.addIDButton
+            self.recommendButton
+        }
+    }
+    
 }
