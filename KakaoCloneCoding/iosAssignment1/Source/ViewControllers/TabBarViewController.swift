@@ -8,11 +8,22 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    
+    // MARK: - Properties
+    
+    // MARK: - @IBOutlet Properties
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
+    
+    // MARK: - @IBAction Properties
+    
+    // MARK: - @Functions
+    
+    // MARK: - Extensions
 
 }
+

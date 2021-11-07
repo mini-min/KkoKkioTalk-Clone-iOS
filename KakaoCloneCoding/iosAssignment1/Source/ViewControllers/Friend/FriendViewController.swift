@@ -30,6 +30,7 @@ class FriendViewController: UIViewController {
         serviceTableView.delegate = self
         serviceTableView.dataSource = self
         serviceTableView.separatorStyle = .none
+
     }
     
     // MARK: - Functions
@@ -80,6 +81,7 @@ class FriendViewController: UIViewController {
     @objc func dismissAlertController() {
         self.dismiss(animated: true, completion: nil)
     }
+    
     
     // MARK: - IBAction Properties
     @IBAction func profileButtonClicked(_ sender: Any) {
@@ -200,3 +202,4 @@ extension FriendViewController: UITableViewDataSource {
         return serviceCell
     }
 }
+

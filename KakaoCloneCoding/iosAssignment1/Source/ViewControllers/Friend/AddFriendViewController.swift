@@ -22,7 +22,7 @@ class AddFriendViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,3 +54,5 @@ class AddFriendViewController: UIViewController {
         }
     }
 }
+
+
