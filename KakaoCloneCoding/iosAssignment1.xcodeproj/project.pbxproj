@@ -35,6 +35,8 @@
 		391CB445264023A10092D4D5 /* FifthTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB444264023A10092D4D5 /* FifthTabCollectionViewCell.swift */; };
 		391CB447264026960092D4D5 /* DetailListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CB446264026960092D4D5 /* DetailListDataModel.swift */; };
 		39407264272E4ECB00848C56 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39407263272E4ECB00848C56 /* TabBarViewController.swift */; };
+		39451E5827476595007F0F0D /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39451E5727476595007F0F0D /* EditProfile.storyboard */; };
+		39451E5A274765AF007F0F0D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39451E59274765AF007F0F0D /* EditProfileViewController.swift */; };
 		394A6E942648BB5D007B23C7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A6E932648BB5D007B23C7 /* APIConstants.swift */; };
 		394A6E962648BBBD007B23C7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A6E952648BBBD007B23C7 /* NetworkResult.swift */; };
 		397D278C271B00FB0021A17C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D278B271B00FB0021A17C /* LoginViewController.swift */; };
@@ -83,6 +85,8 @@
 		391CB444264023A10092D4D5 /* FifthTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTabCollectionViewCell.swift; sourceTree = "<group>"; };
 		391CB446264026960092D4D5 /* DetailListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListDataModel.swift; sourceTree = "<group>"; };
 		39407263272E4ECB00848C56 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		39451E5727476595007F0F0D /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		39451E59274765AF007F0F0D /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		394A6E932648BB5D007B23C7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		394A6E952648BBBD007B23C7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		397D278B271B00FB0021A17C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 			children = (
 				39021624271ABD34008FD6B2 /* Freind.storyboard */,
 				3902162E271ABDA5008FD6B2 /* Profile.storyboard */,
+				39451E5727476595007F0F0D /* EditProfile.storyboard */,
 			);
 			path = Friend;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				397D278B271B00FB0021A17C /* LoginViewController.swift */,
 				39021618271ABBC4008FD6B2 /* SignUpViewController.swift */,
 				39407263272E4ECB00848C56 /* TabBarViewController.swift */,
+				39451E59274765AF007F0F0D /* EditProfileViewController.swift */,
 				39021634271ABE42008FD6B2 /* Friend */,
 				39021633271ABE3A008FD6B2 /* Message */,
 				39021632271ABE33008FD6B2 /* Search */,
@@ -470,6 +476,7 @@
 				3902162B271ABD49008FD6B2 /* Shopping.storyboard in Resources */,
 				3902162D271ABD4F008FD6B2 /* Detail.storyboard in Resources */,
 				39021625271ABD34008FD6B2 /* Freind.storyboard in Resources */,
+				39451E5827476595007F0F0D /* EditProfile.storyboard in Resources */,
 				39CE879A27350A500058C4FA /* AddFriendViewController.xib in Resources */,
 				3902162F271ABDA5008FD6B2 /* Profile.storyboard in Resources */,
 				39021629271ABD42008FD6B2 /* Search.storyboard in Resources */,
@@ -563,6 +570,7 @@
 				39CE879927350A500058C4FA /* AddFriendViewController.swift in Sources */,
 				39C1ABF926496B2B000CA65A /* LoginService.swift in Sources */,
 				390215FE271ABA2F008FD6B2 /* TempClass.swift in Sources */,
+				39451E5A274765AF007F0F0D /* EditProfileViewController.swift in Sources */,
 				39021638271ABE77008FD6B2 /* ProfileViewController.swift in Sources */,
 				3902160A271ABAD4008FD6B2 /* Storyboard.swift in Sources */,
 				394A6E962648BBBD007B23C7 /* NetworkResult.swift in Sources */,

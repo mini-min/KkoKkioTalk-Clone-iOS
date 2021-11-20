@@ -54,5 +54,3 @@ class AddFriendViewController: UIViewController {
         }
     }
 }
-
-

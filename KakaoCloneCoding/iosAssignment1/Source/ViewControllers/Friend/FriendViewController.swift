@@ -202,4 +202,3 @@ extension FriendViewController: UITableViewDataSource {
         return serviceCell
     }
 }
-
